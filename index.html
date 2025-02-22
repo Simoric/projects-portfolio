@@ -12,9 +12,29 @@
             text-align: center;
         }
         header {
-            background-color: #333;
+            background-color: #004080;
             color: white;
             padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            max-width: 900px;
+            width: 100%;
+        }
+        .header-content img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .header-text {
+            text-align: left;
+            flex: 1;
         }
         .container {
             display: flex;
@@ -22,7 +42,6 @@
             justify-content: center;
             padding: 20px;
         }
-        
         .project {
             width: 600px;
             border: 1px solid #ddd;
@@ -32,13 +51,11 @@
             padding: 20px;
             background-color: #f9f9f9;
         }
-        
         .image-container {
             display: flex;
             justify-content: space-between;
             gap: 10px;
         }
-        
         .image-container img {
             width: 48%;
             border-radius: 10px;
@@ -57,8 +74,13 @@
 </head>
 <body>
     <header>
-        <h1>Benvenuto nel mio portfolio!</h1> 
-        <p>Questo è il mio spazio dove presento i miei progetti.</p>
+        <div class="header-content">
+            <img src="img/.jpg" alt="La mia foto">
+            <div class="header-text">
+                <h1>Benvenuto nel mio portfolio!</h1>
+                <p>Sono Simone Ricci, un appassionato di tecnologia e sviluppo di soluzioni innovative. Qui troverai i miei progetti principali!</p>
+            </div>
+        </div>
     </header>
     
     <section class="container">
@@ -68,29 +90,27 @@
                 <img src="img/WISE_MakerFaire.jpg" alt="WISE Maker Faire">
                 <img src="img/WISE_Poster_MakerFaire2024.png" alt="WISE Poster Maker Faire 2024">
             </div>
-            <p>WISE è un dispositivo indossabile e connesso per anziani in casa con difficoltà motorie, ipoacusia e amnesia. Esso colma una lacuna nelle tecnologie assistive attuali integrando tutte le sue funzionalità. Rileva le cadute e invia richieste di assistenza all'app del tutore. Riconosce i suoni di citofono e telefono, illuminandosi di verde o blu, e ricorda l’assunzione di farmaci ad orari impostati lampeggiando di rosso. Include anche un pulsante di emergenza per comunicazioni istantanee sull’app. Questo dispositivo è stato presentato al Maker Faire 2024 (Roma) insieme al mio team.</p>
+            <p>WISE è un dispositivo indossabile e connesso per anziani in casa con difficoltà motorie, ipoacusia e amnesia. Esso colma una lacuna nelle tecnologie assistive attuali integrando tutte le sue funzionalità...</p>
             <p><a href="https://makerfairerome.eu/it/espositori/?edition=2024&exhibit=2420522" target="_blank">Maggiori informazioni sul progetto</a></p>
         </div>
 
-        <!-- Secondo progetto: Personal Meteo -->
         <div class="project">
             <h3>Personal Meteo</h3>
             <div class="image-container">
                 <img src="img/PMeteo_PCB.jpg" >
-                <img src="img/PMeteo_Package.jng" >
+                <img src="img/PMeteo_Package.jpg" >
             </div>
-            <p>Personal Meteo è un sistema embedded progettato per creare una stazione meteo portatile in grado di monitorare parametri fondamentali come temperatura, pressione atmosferica e radiazioni UV. Il sistema è composto da due PCB: uno di controllo, che ospita il microcontrollore Atmega328p e un modulo BLE, e l'altro, una scheda che si applica direttamente al wafer, dotata dei sensori per rilevare i parametri meteo. I dati raccolti vengono inviati in tempo reale a un'app mobile sviluppata appositamente, che consente di visualizzare e monitorare i dati meteo direttamente dal proprio telefono.</p>
+            <p>Personal Meteo è un sistema embedded progettato per creare una stazione meteo portatile...</p>
         </div>
         
         <div class="project">
-            <h3> LoRa Station</h3>
+            <h3>LoRa Station</h3>
             <div class="image-container">
                 <img src="img/LoRa_POMOS.jpg" alt="">
-                <img src="img/LoRa_POMOS_res.jng" alt="">
+                <img src="img/LoRa_POMOS_res.jpg" alt="">
             </div>
-            <p> </p>
+            <p></p>
         </div>
-        
     </section>
 </body>
 </html>
