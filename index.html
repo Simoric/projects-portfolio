@@ -110,7 +110,7 @@
                 <img src="img/PMeteo_PCB.jpg" >
                 <img src="img/PMeteo_Package.jpg" >
             </div>
-            <p>Personal Meteo è un sistema embedded progettato per creare una stazione meteo portatile in grado di monitorare parametri fondamentali come temperatura, pressione atmosferica e radiazioni UV. Il sistema è composto da due PCB: uno di controllo, che ospita il microcontrollore Atmega328p e un modulo BLE, e l'altro, una scheda che si applica direttamente al wafer, dotata dei sensori per rilevare i parametri meteo. I dati raccolti vengono inviati in tempo reale a un'app mobile sviluppata appositamente, che consente di visualizzare e monitorare i dati meteo direttamente dal proprio telefono.</p>
+            <p>Personal Meteo è un sistema embedded progettato per creare una stazione meteo portatile in grado di monitorare parametri fondamentali come temperatura, pressione atmosferica e radiazioni UV. Il sistema è composto da due PCB: uno di controllo, che ospita il microcontrollore Atmega328p e un modulo BLE, e l'altro, una scheda che si sovrapporre in modo modulare, dotata dei sensori per rilevare i parametri meteo. I dati raccolti vengono inviati in tempo reale a un'app mobile sviluppata appositamente, che consente di visualizzare e monitorare i dati meteo direttamente dal proprio telefono.</p>
         </div>
         
         <div class="project">
@@ -118,6 +118,9 @@
             
             <div class="image-container">
                 <img src="img/LoRa_POMOS.jpg" alt="Immagine LoRa">
+                LoRa Station è un prototipo di sistema per il monitoraggio della temperatura e della qualità dell'aria in ambienti ostili. In particolare, può essere introdotto all'interno di industrie con forni ad alta temperatura. L'elemento mostrato in figura è il trasmettitore della stazione, che sfrutta la comunicazione LoRa, un protocollo integrato nel microcontrollore STM32L0.
+                Per il rilevamento della temperatura, ho realizzato un circuito di condizionamento del segnale prodotto da una sonda RTD. Inoltre, per la rilevazione del monossido di carbonio, il sistema utilizza un sensore di gas MQ-9 con uscita analogica.
+                L'intero sistema è alimentato a 5V stabilizzati grazie a un circuito di alimentazione lineare progettato appositamente. Diseguito riporto i grafici MATLAB dei dati ricevuti dal ricevitore. 
             </div>
         
             <p class="description">
